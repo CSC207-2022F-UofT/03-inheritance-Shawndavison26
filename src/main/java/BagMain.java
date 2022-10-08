@@ -22,9 +22,16 @@ class BagMain {
 
         for (Bag i: bags){
             if (double_enhance_handbags){
-                i.enhance();
-                i.enhance();
-                System.out.println(i.getCapacity());
+                if (i instanceof CrossbodyBag){
+                    i.enhance();
+                }
+
+                else {
+                    i.enhance();
+                    i.enhance();
+
+                }
+
             }
 
             else {
