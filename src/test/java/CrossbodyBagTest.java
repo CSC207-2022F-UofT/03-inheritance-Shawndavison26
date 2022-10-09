@@ -37,4 +37,5 @@ public class CrossbodyBagTest {
         assertEquals("Blue Crossbody Bag with 2 straps (0 / 4)", b.toString());
     }
 
+
 }

@@ -34,25 +34,26 @@
 import java.util.ArrayList;
 
 public class CrossbodyBag extends Bag{
-    String color;
-    int capacity;
-    int numberOfStraps;
+    int numberofStraps;
+
 
     public CrossbodyBag(String color, int capacity, int straps){
         super(color, capacity);
-        this.numberOfStraps = straps;
+        this.numberofStraps = straps;
     }
 
     public int getNumberOfStraps(){
-        return this.numberOfStraps;
+        return this.numberofStraps;
     }
 
     public void enhance(){
         increaseCapacity(2);
     }
 
+
     @Override
     public String toString() {
-        return getColor() + " Bag (" + getNumberOfStraps() + getNumberOfContents() + " / " +  getCapacity() + ")";
+        return getColor() + " Crossbody Bag with " + getNumberOfStraps() + " Straps (";
     }
+
 }

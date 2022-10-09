@@ -19,7 +19,8 @@ public abstract class Bag {
     String color;
     int numberOfContents;
     int capacity;
-    ArrayList<String> contents = new ArrayList<String>();
+
+    ArrayList<String> contents;
     /*
      * TODO: Create a constructor that takes two arguments:
      *       - a String representing the Bag's colour
@@ -33,6 +34,7 @@ public abstract class Bag {
         this.color = color;
         this.capacity = capacity;
         this.numberOfContents = 0;
+        this.contents = new ArrayList<String>();
 
     }
 
